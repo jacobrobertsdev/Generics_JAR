@@ -1,8 +1,8 @@
 package linkedlist;
 
 /**
- * This class models a Node object which contains Strings. Each
- * node has its internal data (a String) and pointers to the next 
+ * This class models a Node object which can hold objects of any type. Each
+ * node has its internal data (object of type T) and pointers to the next 
  * node in the list.
  * 
  * @author rkelley/njohnson / Jacob Roberts
@@ -41,7 +41,7 @@ public class GenericNode <T> {
 	
 	/**
 	 * This method returns itself to the caller.
-	 * @return
+	 * @return GenericNode of type T
 	 */
 	public GenericNode<T> getNode() {
 		return this;
