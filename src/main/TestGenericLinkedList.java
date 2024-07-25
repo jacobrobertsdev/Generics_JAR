@@ -8,7 +8,7 @@ public class TestGenericLinkedList {
 
 		// Generic Tests
 		// Integer List
-		GenericLinkedList<Integer> intList = new GenericLinkedList<>();
+		GenericLinkedList<Integer> intList = new GenericLinkedList<Integer>();
 		
 		GenericNode<Integer> intNode = new GenericNode<Integer>();
 		intNode.setData(5);
