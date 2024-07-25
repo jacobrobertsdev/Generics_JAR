@@ -12,7 +12,7 @@ package linkedlist;
 public class GenericNode <T> {
 	
 	private T data;  //data that the object stores
-	private GenericNode nextNode; //pointer to the nextNode that will be in LinkedList
+	private GenericNode<T> nextNode; //pointer to the nextNode that will be in LinkedList
 	
 	/**
 	 * Constructor build Node object. Initializes nextNode and data
@@ -60,9 +60,16 @@ public class GenericNode <T> {
 	 * This method returns the node stored in the next node pointer.
 	 * @return Node object
 	 */
-	@SuppressWarnings("unchecked")
 	public GenericNode<T> getNextNode() {
 		return nextNode;
 	}//end getNextNode
+
+	@Override
+	public String toString() {
+		return "GenericNode: " + "[type=" + data.getClass().getSimpleName() +", data=" + data + ", nextNode=" + nextNode + "]";
+	}
+
+
+	
 	
 }//end class

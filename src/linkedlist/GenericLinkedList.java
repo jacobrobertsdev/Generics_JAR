@@ -6,6 +6,7 @@ package linkedlist;
  * Programming Project 1 Start Project
  * CS131ON
  * @param <T>
+ * @param <T>
  */
 public class GenericLinkedList<T> {
 
